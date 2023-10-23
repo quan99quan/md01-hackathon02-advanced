@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <form action="" >
+        <h1>Select Card</h1>
+        <div class="image">
+            <img src="../img/image-removebg-preview.png" alt="" id="image">
+            <img src="../img/paypal.png" alt="">
+            <img src="../img/visa.png" alt="">
+            <img src="../img/amer.png" alt="">
+            <img src="../img/discover.png" alt="">
+        </div>
+        <hr>
+        <label for="">Card Number</label> <br>
+        <input type="number" id="number">
+        <div class="date">
+          <div>
+            <label for="">Expiry Date</label> <br>
+            <input type="text" placeholder="MM/YY" id="date">
+          </div>
+          <div>
+            <label for="">CVC/CVV</label> <br>
+            <input type="number" id="cvv">
+          </div>
+        </div>
+        <button onclick="add(event)" id="save">Save</button>
+    </form>
+   <br>
+    <table border="1">
+      <tr>
+        <th >Card Img</th>
+        <th>Card Number</th>
+        <th>Expiry Date</th>
+        <th>CVV</th>
+        <th>Action</th>
+      </tr>
+      <tbody id="tbody1"> </tbody>
+    </table>
+<script src="../js/home.js"></script>
+</body>
+</html>
